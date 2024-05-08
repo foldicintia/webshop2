@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="index.js"></script>
+</head>
+<body style="background-color: black;">
+    <header>
+        <a href="index.html"><img src="autoklego/ikonjo.png" class="logo" alt="logo"></a>
+        <nav>
+            <ul id="navbar">
+                <li><a href="termekek.html">Termékek</a></li>
+                <li><a href="szemad.html">Személyes adatok</a></li>
+                <li><a href="kosar.html">Kosár</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div class="urlap mx-auto" style="width: 80%;">
+            <form class="was-validated">
+                <div class="col-lg-12 blokk">
+                  <label for="marka" class="form-label">Márka:</label>
+                  <input type="txt" class="form-control" id="marka" pattern="^[A-Z][a-zA-Z]{2,}$" required>
+                  <div class="invalid-feedback">A márka megadása kötelező</div>
+                </div>
+                <div class="col-lg-12 blokk">
+                    <label for="tipus" class="form-label">Típus:</label>
+                    <input type="txt" class="form-control" id="tipus" pattern="^[A-Z][a-zA-Z]{2,}$" required>
+                    <div class="invalid-feedback">A típus megadása kötelező</div>
+                </div>
+                <div class="col-lg-12 blokk">
+                    <label for="gyartorszag" class="form-label">Típus:</label>
+                    <input type="txt" class="form-control" id="gyartorszag" pattern="^[A-Z][a-zA-Z]{2,}$" required>
+                    <div class="invalid-feedback">A gyártási ország megadása kötelező</div>
+                </div>
+                <div class="col-lg-12 blokk">
+                    <label for="dbszam" class="form-label">Darabszám:</label>
+                    <input type="number" class="form-control" id="dbszam" name="dbszam" required min="0">
+                  </div>
+                <div class="col-lg-12 blokk">
+                  <label for="ar" class="form-label">Ár:</label>
+                  <input type="number" class="form-control" id="ar" name="ar" required min="0">
+                </div>
+                <div class="col-lg-12 blokk">
+                    <label for="mennyis" class="form-label">Mennyiség:</label>
+                    <input type="number" class="form-control" id="mennyis" name="mennyis" required min="1" max="100">
+                  </div>
+
+                  <div class="row justify-content-end">
+                    <div class="col-auto mb-3">
+                        <button type="submit" id="submit" class="btn">Hozzáad</button>
+                    </div>
+                </div>
+              </form>
+        </div>
+
+    </article>
+</body>
+</html>

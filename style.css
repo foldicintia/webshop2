@@ -1,0 +1,92 @@
+
+body{
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+    width: 9vh;
+    background-color: rgb(255, 255, 255);
+    padding: 1vh;
+    margin-left: 2vh;
+    transition: 0.3s ease;
+    border-radius: 49%;
+}
+.logo:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+header{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-right: 2vh;
+}
+nav ul li{
+    list-style: none;
+    padding: 2vh;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: 600;
+    transition: 0.3s ease;
+    color: rgb(243, 243, 243);
+
+}
+nav ul li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+h1{
+    font-size: 10vh; 
+    color: white !important; 
+}
+p{
+    font-size: 4vh;
+    color: white;
+}
+article{
+    margin: 10vh 20vh;
+}
+article img{
+    opacity: 60%;
+    width: 100%;
+}
+label{
+    color: rgb(0, 0, 0);
+}
+.blokk{
+    padding: 2vh;
+}
+#submit{
+    background-color: red;
+    color: white;
+    margin: 2vh;
+    width: 30vh;
+}
+form{
+    border-radius:8vh;
+    padding: 3vh;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+}
+.tovabb a{
+    text-decoration: none;
+    padding: 2vh;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+.tovabb{
+    text-align: right;
+}
+.tovabb a:hover{
+    color: red;
+    transition: 0.3s;
+}
