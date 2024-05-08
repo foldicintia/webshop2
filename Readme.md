@@ -13,12 +13,17 @@ Publikus
 
 #Alkalmazott függvények
 
-kartyaOsszeallit(lista) -> txt létrehozza a kártyákat -> html elem megjelenit(txt, szuloElem) az összeállított txt-ket jeleníti meg szuloELem: html pl. article elemben megjeleniti a txt-t rendezSzempontSzerint(termekLista, szempont) -> szempszerLista
+**kartyaOsszeallit(lista) -> txt létrehozza a kártyákat -> html elem megjelenit(txt, szuloElem)**
+ az összeállított txt-ket jeleníti meg szuloELem: html pl. article elemben megjeleniti a txt-t rendezSzempontSzerint(termekLista, szempont) -> szempszerLista
 
-szuresSzovegSzerint(termekLista, szuroSzoveg) -> szurtLista
+**szuresSzovegSzerint(termekLista, szuroSzoveg) -> szurtLista**
 
-kosarba(termekLista, index, kosarLista) -> kosarLista akkor fut le ha a kártyában lévő gombra kattintunk, és a termekLista indexedik elemét adja át a kosárListának tablazatLetrehoz(lista) -> txt html elem sorTorles(lista, index) -> ujKosarLista
+**kosarba(termekLista, index, kosarLista) -> kosarLista**
+akkor fut le ha a kártyában lévő gombra kattintunk, és a termekLista indexedik elemét adja át a kosárListának tablazatLetrehoz(lista) -> txt html 
+ 
+**elem sorTorles(lista, index) -> ujKosarLista**
 
-adatValtoztat(lista, index, ertek) -> ujKosarLista
+**adatValtoztat(lista, index, ertek) -> ujKosarLista**
 
-osszErtekSzamol(kosarLista) -> osszeg megjelenit() metódussal osszeg kiírása rendelesLead(kosarLista) kiürül a kosár
+**osszErtekSzamol(kosarLista) -> osszeg megjelenit()**
+metódussal osszeg kiírása rendelesLead(kosarLista) kiürül a kosár

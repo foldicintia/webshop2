@@ -1,7 +1,7 @@
 export const AUTOK = [{ 
     marka: 'Nissan', 
     tipus: "350z", 
-    kep: "autoklego/Nissan370z.png",
+    kep: "autoklego/370z.webp",
     orszag: "Japán",
     dbszam: 210,
     ar: 5990

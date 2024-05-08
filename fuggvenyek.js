@@ -5,16 +5,16 @@ function kartyaOsszeallit(AUTOK) {
     for (let i = 0; i < AUTOK.length; i++) {
         const auto = AUTOK[i]
         const kartya = `
-            <div class="col">
+            <div class="col" style="padding: 2vh;">
                 <div class="card">
-                    <div class="card-header text-success"><strong>${auto.marka}</strong><h2>${auto.tipus}</h2></div>
+                    <div class="card-header text-success"><h1>${auto.marka}</h1><h2>${auto.tipus}</h2></div>
                     <div class="card-body">
                         <img src="${auto.kep}" class="img-thumbnail img-fluid" alt="" style="width: 100%; height: auto;">
-                        <br> ${auto.orszag} <br> ${auto.dbszam}
+                        <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka"> ${auto.orszag} <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka">  ${auto.dbszam}
                     </div>
-                    <div class="card-footer d-flex justify-content-between">
+                    <div class="card-footer justify-content-between">
                         <span>Ár: ${auto.ar} Ft</span>
-                        <button type="button" class="btn btn-success">Kosárba</button>
+                        <button type="button" class="btn">Kosárba</button>
                     </div>
                 </div>
             </div>`;

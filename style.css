@@ -48,6 +48,11 @@ h1{
     font-size: 10vh; 
     color: white !important; 
 }
+h2{
+    font-size: 2vh;
+    color: white !important; 
+
+}
 p{
     font-size: 4vh;
     color: white;
@@ -55,7 +60,7 @@ p{
 article{
     margin: 10vh 20vh;
 }
-article img{
+article .fokep{
     opacity: 60%;
     width: 100%;
 }
@@ -89,4 +94,12 @@ form{
 .tovabb a:hover{
     color: red;
     transition: 0.3s;
+}
+button{
+    background-color: red !important;
+    color: white !important;
+}
+.ikonka{
+    width: 4vh;
+    height: auto;
 }
