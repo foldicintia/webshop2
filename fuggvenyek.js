@@ -5,7 +5,7 @@ function kartyaOsszeallit(AUTOK) {
     for (let i = 0; i < AUTOK.length; i++) {
         const auto = AUTOK[i]
         const kartya = `
-            <div class="col" style="padding: 2vh;">
+            <div class="col-lg-4" style="padding: 2vh;>
                 <div class="card">
                     <div class="card-header text-success"><h1>${auto.marka}</h1><h2>${auto.tipus}</h2></div>
                     <div class="card-body">
