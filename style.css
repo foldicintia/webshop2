@@ -78,10 +78,10 @@ label{
     background-color: red;
     color: white;
     margin: 2vh;
-    width: 30vh;
+    width: 20vh;
 }
 form{
-    border-radius:8vh;
+    border-radius:4vh;
     padding: 3vh;
     border: 2px solid rgb(255, 255, 255);
     background-color: white;
