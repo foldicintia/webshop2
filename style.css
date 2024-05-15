@@ -61,7 +61,8 @@ p{
     color: white;
 }
 article{
-    margin: 10vh 20vh;
+    max-width: 80%; 
+    margin: auto;
 }
 article .fokep{
     opacity: 60%;
@@ -102,10 +103,18 @@ button{
     background-color: red !important;
     color: white !important;
 }
+button:hover{
+    background-color: black !important;
+}
 .ikonka{
     width: 4vh;
     height: auto;
 }
 .card{
     background-color: aliceblue;
+}
+@media (max-width: 620px) {
+    #navbarNav {
+        text-align: right;
+    }
 }

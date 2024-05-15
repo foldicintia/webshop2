@@ -12,7 +12,7 @@ function kartyaOsszeallit(AUTOK) {
                         <img src="${auto.kep}" class="img-thumbnail img-fluid" alt="" style="width: 100%; height: auto;">
                         <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka"> ${auto.orszag} <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka">  ${auto.dbszam} db
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer d-flex justify-content-between">
                         <span>Ár: ${auto.ar} Ft</span>
                         <button type="button" class="btn">Kosárba</button>
                     </div>
@@ -57,6 +57,8 @@ rendezesSzempontok.change(function() {
     const rendezettTermekek = rendezes(AUTOK, irany)
     kartyakatMegjelenit(rendezettTermekek)
 });
+
+// kereses
 
 function szures(lista, keresettKifejezes) {
     return lista.filter(auto => {
