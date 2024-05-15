@@ -44,13 +44,16 @@ nav ul li a:hover{
     color: red;
     transition: 0.3s;
 }
+.cim{
+    color: white !important;
+}
 h1{
     font-size: 10vh; 
-    color: white !important; 
+    color: rgb(79, 79, 79) !important; 
 }
 h2{
     font-size: 2vh;
-    color: white !important; 
+    color:  rgb(79, 79, 79) !important; 
 
 }
 p{
@@ -102,4 +105,7 @@ button{
 .ikonka{
     width: 4vh;
     height: auto;
+}
+.card{
+    background-color: aliceblue;
 }

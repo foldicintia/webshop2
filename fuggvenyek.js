@@ -5,14 +5,14 @@ function kartyaOsszeallit(AUTOK) {
     for (let i = 0; i < AUTOK.length; i++) {
         const auto = AUTOK[i]
         const kartya = `
-            <div class="col-lg-4" style="padding: 2vh;>
+            <div class="col-lg-4 col-md-6" style="padding: 2vh;" "background-color: black;">
                 <div class="card">
-                    <div class="card-header text-success"><h1>${auto.marka}</h1><h2>${auto.tipus}</h2></div>
+                    <div class="card-header"><h1>${auto.marka}</h1><h2>${auto.tipus}</h2></div>
                     <div class="card-body">
                         <img src="${auto.kep}" class="img-thumbnail img-fluid" alt="" style="width: 100%; height: auto;">
-                        <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka"> ${auto.orszag} <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka">  ${auto.dbszam}
+                        <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka"> ${auto.orszag} <br><img src="autoklego/ikonjo.png" alt="ikon" class="ikonka">  ${auto.dbszam} db
                     </div>
-                    <div class="card-footer justify-content-between">
+                    <div class="card-footer">
                         <span>Ár: ${auto.ar} Ft</span>
                         <button type="button" class="btn">Kosárba</button>
                     </div>
@@ -54,7 +54,19 @@ function kartyakatMegjelenit(rendezettTermekek) {
 const rendezesSzempontok = $(".rendezesSzempontok")
 rendezesSzempontok.change(function() {
     const irany = $(this).val()
-    const rendezettTermekek = rendezes(TERMEKEK, irany)
+    const rendezettTermekek = rendezes(AUTOK, irany)
     kartyakatMegjelenit(rendezettTermekek)
 });
 
+function szures(lista, keresettKifejezes) {
+    return lista.filter(auto => {
+        return auto.marka.toLowerCase().includes(keresettKifejezes.toLowerCase())
+    });
+}
+
+const szuroInput = $("#szuro");
+szuroInput.on("input", function() {
+    const keresettKifejezes = $(this).val();
+    const szurtTermekek = szures(AUTOK, keresettKifejezes);
+    kartyakatMegjelenit(szurtTermekek);
+});
