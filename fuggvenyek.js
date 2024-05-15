@@ -72,3 +72,24 @@ szuroInput.on("input", function() {
     const szurtTermekek = szures(AUTOK, keresettKifejezes);
     kartyakatMegjelenit(szurtTermekek);
 });
+function szemelyesAdatokMent() {
+    event.preventDefault();
+
+    const nev = document.getElementById('nev').value;
+    const irszam = document.getElementById('irszam').value;
+    const varos = document.getElementById('varos').value;
+    const utca = document.getElementById('utca').value;
+    const hazszam = document.getElementById('hazszam').value;
+
+    console.log('Név: ', nev);
+    console.log('Irányítószám: ', irszam);
+    console.log('Város: ', varos);
+    console.log('Utca: ', utca);
+    console.log('Házszám: ', hazszam)
+
+
+    alert('A személyes adatait elmentettük.');
+    return false;
+}
+document.getElementById('szemelyesAdatokForm').addEventListener('submit', szemelyesAdatokMent);
+
